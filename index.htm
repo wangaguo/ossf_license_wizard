@@ -3,7 +3,6 @@
 <head>
     <title>License Wizard 3.0</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
 		<META NAME="keywords" CONTENT="LicenseWizard, 授權精靈, LicenseWizard 3.0, 授權精靈 3.0, 自由軟體鑄造場, OSSF">
 		<META NAME="description" CONTENT="License Wizard, 內容涵蓋最廣為使用的十幾種自由軟體授權條款，讓程式設計者按步驟回答幾個簡單的問題，就可以得到最合其用的一自由軟體授權條款。">
 		<META HTTP-EQUIV="Content-Language" CONTENT="ZH-TW">
@@ -18,7 +17,6 @@
     	
 		function myIndexOf(item)
 		{		
-			//alert('my!');
 			for (var j = 0; j < this.length; j++)
 				if (this[j]	== item)
 					return j
@@ -71,7 +69,7 @@
 				for (var QQ in questions)
 				{
 					matrixTable += '<tr id="Tr' + QQ + '">';
-				matrixTable += '<th>'+questions[QQ].Q +'</th><td>' +
+					matrixTable += '<th>'+questions[QQ].Q +'</th><td>' +
 					'<input type="radio" name="' + QQ + '" onclick="QClick(this, true);"><span id="' + QQ + 'true" class="LwRadioBadAnswer">Y</span>' +
 					'<input type="radio" name="' + QQ + '" onclick="QClick(this, false);"><span id="' + QQ + 'false" class="LwRadioBadAnswer">N</span></td>';
 					
@@ -95,25 +93,6 @@
 			//Question Click
 			function QClick(Q, YN)
 			{
-//				if(YN == 1)	{var Y = "1";  var N = "0";}
-//				else {var Y = "0";  var N = "1";}
-//				
-//				var tr = document.getElementById("Tr" + Q.name);
-//				var A = licenses[Q.name].A;
-//
-//				//show right licenses
-//				for(i=0; i<licenses.length; i++)
-//				{
-//					if(A.indexOf(licenses[i]) != -1)
-//					{ tr.childNodes[i+2].A = Y;	}
-//					else
-//					{	tr.childNodes[i+2].A = N;	}
-//					if(tr.childNodes[i+2].A == 1) tr.childNodes[i+2].innerHTML = '<img src="images/2.png" alt="★">';
-//					else 
-//					{ tr.childNodes[i+2].innerHTML = "";}
-//				}
-//				CheckAnswer();
-
 				for (var i = 0; i < licenses.length; i++)
 				{
 					goodAns[Q.name][i] = goodAnswer(Q.name, i, YN);
@@ -152,39 +131,6 @@
 						document.getElementById(QQ + TF).className =
 							goodAnswer(QQ, licenseIndex, eval(TF)) ? "LwRadioGoodAnswer" : "LwRadioBadAnswer";                  
 			}							                                                      
-			
-			
-//			//Check Answer and Highlight column
-//			function CheckAnswer()
-//			{
-//				var check = new Array();
-//				var tr;
-//				var test="";
-//				
-//				//init check array
-//				for(i=1; i<=licenses.length; i++)
-//					{ check[i] = 1; test += check[i] + ' '; }
-//				test += '\n';
-//				
-//				for (var QQ in licenses)
-//				{
-//					tr = document.getElementById("Tr" + QQ);
-//					for(i=2; i<tr.childNodes.length; i++)
-//					{
-//						check[i-1] &= parseInt(tr.childNodes[i].A);
-//						//test += parseInt(tr.childNodes[i].innerHTML) + " ";
-//						test += check[i-1] + " ";
-//					}
-//					test += "\n";				
-//				}
-//				
-//				for(i=1; i<=licenses.length; i++)
-//					if(check[i] == 1) document.getElementById(licenses[i-1]).className = "LwColHighlight";
-//					else document.getElementById(licenses[i-1]).className = "LwColNoHighlight";
-//				//alert(test);
-//			}
-
-
     </script>
     <style type="text/css">
 			*{ font-size:12px; }
@@ -209,8 +155,7 @@
       .ltin {left:-5px;}
       .tpin {top:-5px;} 
 
-			/*#LwTable thead td{font-size:30px;}*/
-    </style>
+    </style>    
 </head>
 
 <body onload="Start();">
@@ -236,40 +181,7 @@
 			</li>
 			<li>
 					LW 3.0 的程式碼與內容採用<a href="http://www.opensource.org/licenses/mit-license.php" target="_black">MIT</a>授權，原始碼可以<a href="http://rt.openfoundry.org/Foundry/Project/Download/?Queue=139">在此</a>下載。<br>					
-			</li>			
-
+			</li>
 		</ul>
-
 </body>
 </html>
-	<script language="javascript">
-		
-	//Start();
-		//document.getElementById("Apache 1.1").className = "LwColHighlight";
-		
-	/*
-	
-						
-//					for(j=0; j<A.length; j++)
-//					{
-//						if(licenses[i] == A[j]) match = true;
-//					}
-//					
-//					if(match == true) tr.childNodes[i+1].innerHTML = Y;
-//					else tr.childNodes[i+1].innerHTML = N;
-					//matrixTable += '</td>';
-					
-				//alert(Q.name + ' ' + YN);
-				//alert("Tr" + Q.name);
-				//alert('licenses.' + Q.name);
-				
-				
-//		var A = ["A",["B","C"],"C"];
-//			var B = {A: "A", B: "B", C: {D: "D", E: ["F", "G"]}};
-			
-			//document.write(Licenses.A[1] + "<br />");
-			//Lcs = {Licenses: {}"Saturn", getCar: CarTypes("Honda"), special: Sales}
-			//manyCars: {a: "Saab", b: "Jeep"}
-	
-	*/
-	</script>
