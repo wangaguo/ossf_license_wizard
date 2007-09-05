@@ -1,38 +1,38 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>License Wizard 3.0</title>
+    <title>License Wizard 3.1</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
-		<META NAME="keywords" CONTENT="LicenseWizard, 授權精靈, LicenseWizard 3.0, 授權精靈 3.0, 自由軟體鑄造場, OSSF">
-		<META NAME="description" CONTENT="License Wizard, 內容涵蓋最廣為使用的十幾種自由軟體授權條款，讓程式設計者按步驟回答幾個簡單的問題，就可以得到最合其用的一自由軟體授權條款。">
-		<META HTTP-EQUIV="Content-Language" CONTENT="ZH-TW">
-		<META NAME="author" CONTENT="wangaguo, lcamel, ally, florence, alan, yihsuan, i989, OSSF">
-		<META NAME="content-author" CONTENT="florence, alan, yihsuan, i989, OSSF">
-		<META NAME="code-author" CONTENT="wangaguo, lcamel, ally, OSSF">
-		<META NAME="distribution" CONTENT="Global">
-		<META NAME="robots" CONTENT="FOLLOW,INDEX">
-		<META NAME="content-license" CONTENT="MIT">
-		<META NAME="code-license" CONTENT="MIT">			
+		<META NAME="keywords" CONTENT="LicenseWizard, 授權精靈, LicenseWizard 3.1, 授權精靈 3.1, 自由軟體鑄造場, OSSF" />
+		<META NAME="description" CONTENT="License Wizard, 內容涵蓋最廣為使用的十幾種自由軟體授權條款，讓程式設計者按步驟回答幾個簡單的問題，就可以得到最合其用的一自由軟體授權條款。" />
+		<META HTTP-EQUIV="Content-Language" CONTENT="ZH-TW" />
+		<META NAME="author" CONTENT="wangaguo, lcamel, ally, florence, alan, yihsuan, i989, OSSF" />
+		<META NAME="content-author" CONTENT="florence, alan, yihsuan, i989, OSSF" />
+		<META NAME="code-author" CONTENT="wangaguo, lcamel, ally, OSSF" />
+		<META NAME="distribution" CONTENT="Global" />
+		<META NAME="robots" CONTENT="FOLLOW,INDEX" />
+		<META NAME="content-license" CONTENT="MIT" />
+		<META NAME="code-license" CONTENT="MIT" />			
     <script language="javascript 1.5" type="text/javascript">
     	
 		function myIndexOf(item)
-		{		
+		{
 			for (var j = 0; j < this.length; j++)
 				if (this[j]	== item)
 					return j
 			return -1;
 		}    	
 		Array.prototype.indexOf = myIndexOf;
-					//License Data
+			//License Data
 			var licenses = ["Apache 1.1", "Apache 2.0", "Artistic", "BSD", "CPL", "GPL", "LGPL" , "MIT" , "MPL", "QPL", "zlib/libpng"];
 			var questions = 
 			{
 				Q1: {Q: "<span>1.</span>再次散布程式必須提供原始碼", A: ["Artistic", "CPL", "QPL", "MPL", "LGPL", "GPL"]},
 				Q2: {Q: "<span>2.</span>允許再授權", A: ["MIT", "Apache 2.0", "CPL", "MPL"]},
 				Q3: {Q: "<span>3.</span>授權他人使用程式中的專利", A: ["Apache 2.0", "CPL", "MPL"]},
-				Q4: {Q: "<span>4.</span>原始程式與修改程式均必須採用相同的授權條款", A:["GPL", "LGPL"]},
+				Q4: {Q: "<span>4.</span>原始程式與修改程式均必須採用相同的授權條款", A:["CPL", "GPL", "LGPL"]},
 				Q5: {Q: "<span>5.</span>原始程式採用相同授權條款，特定程式碼可以採用授權人所限定的其他授權條款", A:["MPL"]},
-				Q6: {Q: "<span>6.</span>允許使用者自由採用其他授權條款，只要這些條款不與原有授權條款相衝突", A:["CPL", "QPL", "Apache 2.0"]},
+				Q6: {Q: "<span>6.</span>允許使用者自由採用其他授權條款，只要這些條款不與原有授權條款相衝突", A:["QPL", "Apache 2.0"]},
 				Q7: {Q: "<span>7.</span>使用者可以任意採用其他授權條款", A:["BSD", "MIT", "zlib/libpng", "Apache 1.1", "Artistic"]},
 				Q8: {Q: "<span>8.</span>修改程式時必須附加修改說明文件", A:["zlib/libpng", "Apache 1.1", "Apache 2.0", "Artistic", "MPL", "LGPL", "GPL"]}
 			}
@@ -47,7 +47,6 @@
 	 					goodAns[QQ] = {};
 				
 				var matrix = document.getElementById("Matrix");
-				//alert(matrix);
 				var A;
 				var matrixTable;
 				
@@ -130,7 +129,7 @@
 					for (var TF in { 'true':'', 'false':'' })               
 						document.getElementById(QQ + TF).className =
 							goodAnswer(QQ, licenseIndex, eval(TF)) ? "LwRadioGoodAnswer" : "LwRadioBadAnswer";                  
-			}							                                                      
+			}
     </script>
     <style type="text/css">
 			*{ font-size:12px; }
@@ -154,34 +153,36 @@
       .in {background:#fff; border:2px solid #555; position:relative; padding:5px; width:1000px;}
       .ltin {left:-5px;}
       .tpin {top:-5px;} 
-
     </style>    
 </head>
 
 <body onload="Start();">
-	<br>
+	<br/>
 	<div class="out narrow">
 	<div class="in ltin tpin">
-		<h2>授權精靈 V3.0</h2>
+		<h2>授權精靈 V3.1</h2>
 		<div id="Matrix">顯示不正常</div>
 	</div>
 	</div>
 	<input type="button" onclick="Start()" value="Reset" />
 
 		<ul>
-			<li><span>
-				<b>使用說明</b><br>
-				(1)為篩選出最接近您需求之授權條款，我們建議您回答所有問題。<br>
-				(2)請注意！當按下左下方之Reset，所有您做的選擇將被清除，恢復原始狀態。<br>
-				(3)當點選左側"問題"之Y/N選鈕，我們將以黑點在相對應欄位標示出符合之授權條款，並以藍色填滿顯示符合您目前所有答案之授權條款。<br>&nbsp;&nbsp;&nbsp;&nbsp;若點選多個答案後無藍色填滿出現，則代表無符合您需求之授權條款。<br>
-				(4)當您點選上方之"條款"，我們將於左方以藍色填滿標示出每一題目之相對應答案。<br>
-				(5)以上(3)、(4)之操作並不互相衝突，您可自行交互運用，以篩選出最接近需求之授權條款。<br>
-  					</span>
-					</a>
+			<li>
+				<b>使用說明</b><br/>
+				(1)為篩選出最接近您需求之授權條款，我們建議您回答所有問題。<br/>
+				(2)請注意！當按下左下方之Reset，所有您做的選擇將被清除，恢復原始狀態。<br/>
+				(3)當點選左側"問題"之Y/N選鈕，我們將以黑點在相對應欄位標示出符合之授權條款，並以藍色填滿顯示符合您目前所有答案之授權條款。<br/>&nbsp;&nbsp;&nbsp;&nbsp;若點選多個答案後無藍色填滿出現，則代表無符合您需求之授權條款。<br/>
+				(4)當您點選上方之"條款"，我們將於左方以藍色填滿標示出每一題目之相對應答案。<br/>
+				(5)以上(3)、(4)之操作並不互相衝突，您可自行交互運用，以篩選出最接近需求之授權條款。<br/>
 			</li>
 			<li>
-					LW 3.0 的程式碼與內容採用<a href="http://www.opensource.org/licenses/mit-license.php" target="_black">MIT</a>授權，原始碼可以<a href="http://rt.openfoundry.org/Foundry/Project/Download/?Queue=139">在此</a>下載。<br>					
+					LW 3.1 的程式碼與內容採用<a href="http://www.opensource.org/licenses/mit-license.php" target="_black">MIT</a>授權，原始碼可以<a href="http://rt.openfoundry.org/Foundry/Project/Download/?Queue=139" target="_black">在此</a>下載。<br/>					
 			</li>
+			<li>
+					若對於授權精靈有任何意見，歡迎您至<a href="http://rt.openfoundry.org/Foundry/Project/Tracker/?Queue=139&Action-New=1&Type=defect" target="_black">這裡留言</a>。
+			</li>
+
 		</ul>
+
 </body>
 </html>
