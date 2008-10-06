@@ -1,0 +1,25 @@
+use utf8;
+do "DefaultPage.html";
+
+<< "PAGE";
+$LW2_HEADER
+$LW2_LICENSES
+<p>
+<PRE wrap="hard" style="word-wrap: break-word; width: 550px; font-size: 12px; "class="main" >
+感謝您使用本授權指引，依據您的回答，我們建議您採用下列授權條款：
+<p></pre>
+        <span class="LW2_answers">
+        @{[
+        map {
+qq~
+<div class="LW2_license"><a href="@{[ $data->{Licenses}->[0]->{License}->{$_}->{url} ]}" target="_black">$_</a></div>
+<PRE wrap="hard" style="word-wrap: break-word; width: 550px; font-size: 12px; border-style: dashed; border-width: 1px; border-color: #999999; "class="main" >@{[ txt($data->{Licenses}->[0]->{License}->{$_}->{Description}) ]}</pre>
+~
+        } @licenses
+        ]}
+        </span>
+<p>
+<form action="LicenseWizard.cgi"><input type="submit" value="LicenseWizard"></form>
+$LW2_FOOTER
+PAGE
+
