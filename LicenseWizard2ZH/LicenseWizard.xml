@@ -32,7 +32,6 @@
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -50,7 +49,6 @@
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL"/>
@@ -68,7 +66,6 @@
 					<Licenses>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -107,7 +104,6 @@
 						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -129,7 +125,6 @@
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -146,7 +141,6 @@
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -177,7 +171,6 @@
 						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -237,7 +230,6 @@
 					<Text>否，我不同意。</Text>
 					<Description>我認為使用者不應該收取比散布原始碼成本還要高的金額，如果他想要藉由販賣我的專案程式原始碼賺錢，應該要另外取得我的同意。</Description>
 					<Licenses>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -259,7 +251,6 @@
 						<License id="Apache 1.1"/>
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 					</Licenses>
 				</Answer>
@@ -277,18 +268,6 @@
 		<Question id="Q9-1">
 			<Text>承上題，您願意在什麼狀況下允許使用者選擇符合自己需求的授權條款呢？</Text>
 			<Answers>
-				<Answer value="1" nextQuestion="Q10">
-					<Text> 修改程式的使用者可以隨意選擇合乎需求的授權條款，就算不是自由軟體授權條款也不要緊。</Text>
-					<Description>
-                        </Description>
-					<Licenses>
-						<License id="MIT"/>
-						<License id="BSD"/>
-						<License id="zlib/libpng"/>
-						<License id="Apache 1.1"/>
-						<License id="Artistic"/>
-					</Licenses>
-				</Answer>
 				<Answer value="2" nextQuestion="Q10">
 					<Text> 我希望使用者選擇我所指定的授權條款。</Text>
 					<Description/>
@@ -301,7 +280,11 @@
 					<Description/>
 					<Licenses>
 						<License id="Apache 2.0"/>
-						<License id="QPL 1.0"/>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
 					</Licenses>
 				</Answer>
 			</Answers>
@@ -317,7 +300,6 @@
 						<License id="zlib/libpng"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -360,7 +342,6 @@
 						<License id="MIT"/>
 						<License id="BSD"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 					</Licenses>
 				</Answer>
 			</Answers>
