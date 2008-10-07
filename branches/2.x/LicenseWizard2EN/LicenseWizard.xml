@@ -32,7 +32,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -50,7 +49,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL"/>
@@ -68,7 +66,6 @@ Before we start, please allow us to remind you that computer programs and relate
 					<Licenses>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -107,7 +104,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -129,7 +125,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -146,7 +141,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -178,7 +172,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -238,7 +231,6 @@ Before we start, please allow us to remind you that computer programs and relate
 					<Text>NO, I don’t agree.</Text>
 					<Description>The licensee could not charge a fee higher than the cost of distributing the source code. He or she needs my prior consent if he or she wants to make a profit by selling the source code of my project.</Description>
 					<Licenses>
-						<License id="QPL 1.0"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
 					</Licenses>
@@ -260,7 +252,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="Apache 1.1"/>
 						<License id="Apache 2.0"/>
 						<License id="Artistic"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 					</Licenses>
 				</Answer>
@@ -278,31 +269,23 @@ Before we start, please allow us to remind you that computer programs and relate
 		<Question id="Q9-1">
 			<Text>Continued from the last question. Under which conditions do you allow the licensee to adopt a license of his or her own?</Text>
 			<Answers>
-				<Answer value="1" nextQuestion="Q10">
-					<Text>1.The licensee who modifies the program can choose any license he or she likes, even if the license is not a free software one.</Text>
-					<Description>
-                        </Description>
-					<Licenses>
-						<License id="MIT"/>
-						<License id="BSD"/>
-						<License id="zlib/libpng"/>
-						<License id="Apache 1.1"/>
-						<License id="Artistic"/>
-					</Licenses>
-				</Answer>
 				<Answer value="2" nextQuestion="Q10">
-					<Text>2.I would like that the licensee adopts a license that I designate.</Text>
+					<Text>I would like that the licensee adopts a license that I designate.</Text>
 					<Description/>
 					<Licenses>
 						<License id="MPL 1.1"/>
 					</Licenses>
 				</Answer>
 				<Answer value="3" nextQuestion="Q10">
-					<Text>3.The licensee can decide which terms he or she likes to use so long as they do not contradict the license that I have adopted.</Text>
+					<Text>The licensee can decide which terms he or she likes to use so long as they do not contradict the license that I have adopted.</Text>
 					<Description/>
 					<Licenses>
 						<License id="Apache 2.0"/>
-						<License id="QPL 1.0"/>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
 					</Licenses>
 				</Answer>
 			</Answers>
@@ -318,7 +301,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="zlib/libpng"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 						<License id="MPL 1.1"/>
 						<License id="LGPL 2.1"/>
 						<License id="GPL 2.0"/>
@@ -361,7 +343,6 @@ Before we start, please allow us to remind you that computer programs and relate
 						<License id="MIT"/>
 						<License id="BSD"/>
 						<License id="CPL 1.0"/>
-						<License id="QPL 1.0"/>
 					</Licenses>
 				</Answer>
 			</Answers>

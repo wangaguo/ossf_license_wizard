@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>License Wizard 3.2</title>
+    <title>License Wizard 3.3</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
-	<META NAME="keywords" CONTENT="LicenseWizard, 授權精靈, LicenseWizard 3.2, 授權精靈 3.2, 自由軟體鑄造場, OSSF" />
+	<META NAME="keywords" CONTENT="LicenseWizard, 授權精靈, LicenseWizard 3.3, 授權精靈 3.3, 自由軟體鑄造場, OSSF" />
 	<META NAME="description" CONTENT="License Wizard, 內容涵蓋最廣為使用的十幾種自由軟體授權條款，讓程式設計者按步驟回答幾個簡單的問題，就可以得到最合其用的一自由軟體授權條款。" />
 	<META HTTP-EQUIV="Content-Language" CONTENT="ZH-TW" />
 	<META NAME="author" CONTENT="wangaguo, lcamel, ally, florence, alan, yihsuan, i989, OSSF" />
@@ -24,29 +24,27 @@
 		}    	
 		Array.prototype.indexOf = myIndexOf;
 			//License Data
-			var licenses = ["Apache 1.1", "Apache 2.0", "Artistic", "BSD", "CPL", "GPL", "LGPL" , "MIT" , "MPL", "QPL", "zlib/libpng"];
+			var licenses = ["Apache 1.1", "Apache 2.0", "Artistic", "BSD", "CPL", "GPL", "LGPL" , "MIT" , "MPL", "zlib/libpng"];
 			var questions = new Array();
 			questions["zh-tw"] = 
 			{
-				Q1: {Q: "<span>1.</span>再次散布程式必須提供原始碼", A: ["Artistic", "CPL", "QPL", "MPL", "LGPL", "GPL"]},
+				Q1: {Q: "<span>1.</span>再次散布程式必須提供原始碼", A: ["Artistic", "CPL", "MPL", "LGPL", "GPL"]},
 				Q2: {Q: "<span>2.</span>允許再授權", A: ["MIT", "Apache 2.0", "CPL", "MPL"]},
 				Q3: {Q: "<span>3.</span>授權他人使用程式中的專利", A: ["Apache 2.0", "CPL", "MPL"]},
 				Q4: {Q: "<span>4.</span>原始程式與修改程式均必須採用相同的授權條款", A:["CPL", "GPL", "LGPL"]},
 				Q5: {Q: "<span>5.</span>原始程式採用相同授權條款，特定程式碼可以採用授權人所限定的其他授權條款", A:["MPL"]},
-				Q6: {Q: "<span>6.</span>允許使用者自由採用其他授權條款，只要這些條款不與原有授權條款相衝突", A:["QPL", "Apache 2.0"]},
-				Q7: {Q: "<span>7.</span>使用者可以任意採用其他授權條款", A:["BSD", "MIT", "zlib/libpng", "Apache 1.1", "Artistic"]},
-				Q8: {Q: "<span>8.</span>修改程式時必須附加修改說明文件", A:["zlib/libpng", "Apache 1.1", "Apache 2.0", "Artistic", "MPL", "LGPL", "GPL"]}
+				Q6: {Q: "<span>6.</span>允許使用者自由採用其他授權條款，只要這些條款不與原有授權條款相衝突", A:["Apache 2.0", "BSD", "MIT", "zlib/libpng", "Apache 1.1", "Artistic"]},
+				Q7: {Q: "<span>7.</span>修改程式時必須附加修改說明文件", A:["zlib/libpng", "Apache 1.1", "Apache 2.0", "Artistic", "MPL", "LGPL", "GPL"]}
 			}
 			questions["en"] = 
 			{
-				Q1: {Q: "<span>1.</span>When distributing the program, the source code must be provided.", A: ["Artistic", "CPL", "QPL", "MPL", "LGPL", "GPL"]},
+				Q1: {Q: "<span>1.</span>When distributing the program, the source code must be provided.", A: ["Artistic", "CPL", "MPL", "LGPL", "GPL"]},
 				Q2: {Q: "<span>2.</span>Allowing the program to be relicensed.", A: ["MIT", "Apache 2.0", "CPL", "MPL"]},
 				Q3: {Q: "<span>3.</span>The patents involved in the program are authorized to the general public.", A: ["Apache 2.0", "CPL", "MPL"]},
 				Q4: {Q: "<span>4.</span>The modification must apply the same license as the original program.", A:["CPL", "GPL", "LGPL"]},
 				Q5: {Q: "<span>5.</span>The designated source code could apply the specified licenses.", A:["MPL"]},
-				Q6: {Q: "<span>6.</span>Any other license could be applied as long as it is not conflict with the original one.", A:["QPL", "Apache 2.0"]},
-				Q7: {Q: "<span>7.</span>The program could apply any license at user's discretion.", A:["BSD", "MIT", "zlib/libpng", "Apache 1.1", "Artistic"]},
-				Q8: {Q: "<span>8.</span>The documentations of the modification must come along with the modified program.", A:["zlib/libpng", "Apache 1.1", "Apache 2.0", "Artistic", "MPL", "LGPL", "GPL"]}
+				Q6: {Q: "<span>6.</span>Any other license could be applied as long as it is not conflict with the original one.", A:["Apache 2.0", "BSD", "MIT", "zlib/libpng", "Apache 1.1", "Artistic"]},
+				Q7: {Q: "<span>7.</span>The documentations of the modification must come along with the modified program.", A:["zlib/libpng", "Apache 1.1", "Apache 2.0", "Artistic", "MPL", "LGPL", "GPL"]}
 			}
 	
 			//Generate License Wizard Table
@@ -210,7 +208,7 @@
 		<form>
 			<div class="out">
 				<div class="in">
-					<h2 class="lang zh-tw">授權精靈 V3.2</h2><h2 class="lang en">LicenseWizard V3.2</h2>
+					<h2 class="lang zh-tw">授權精靈 V3.3</h2><h2 class="lang en">LicenseWizard V3.3</h2>
 					<div id="LangSel" style=""><a href="?en">English</a> / <a href="?zh-tw">中文</a></div>
 					<div id="Matrix">顯示不正常</div>
 				</div>
