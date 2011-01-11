@@ -297,7 +297,6 @@
 					<Text>是。</Text>
 					<Description>我要求使用者修改程式之後，也必須公開修改的程式原始碼，方便更多使用者能夠進一步地利用與改進。</Description>
 					<Licenses>
-						<License id="zlib/libpng"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
 						<License id="MPL 1.1"/>
@@ -311,6 +310,7 @@
 					<Licenses>
 						<License id="MIT"/>
 						<License id="BSD"/>
+						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Apache 2.0"/>
 					</Licenses>
