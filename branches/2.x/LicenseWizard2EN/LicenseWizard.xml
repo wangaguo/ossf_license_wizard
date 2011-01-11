@@ -298,7 +298,6 @@ Before we start, please allow us to remind you that computer programs and relate
 					<Text>YES.</Text>
 					<Description> I require the licensee who modifies the code should release the modified source code so that other users can make use of it or improve on it.</Description>
 					<Licenses>
-						<License id="zlib/libpng"/>
 						<License id="Artistic"/>
 						<License id="CPL 1.0"/>
 						<License id="MPL 1.1"/>
@@ -312,6 +311,7 @@ Before we start, please allow us to remind you that computer programs and relate
 					<Licenses>
 						<License id="MIT"/>
 						<License id="BSD"/>
+						<License id="zlib/libpng"/>
 						<License id="Apache 1.1"/>
 						<License id="Apache 2.0"/>
 					</Licenses>
