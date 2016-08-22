@@ -1,0 +1,56 @@
+A:link {text-decoration: none; color: blue;}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: none;}
+.LW2_body{font-family:"Arial"; font-size: 12px;}
+.LW2_header{font-size: 35px; font-weight: bold}
+
+.LW2_nowLicense{
+	border-style:none;
+	font-size: 13px; 
+	background-color:#E0E0E0; 
+	width:550;
+	text-align:left;
+	}
+.LW2_licenses{font-weight: bold;}
+.LW2_question{font-size: 12px; font-weight: bold; color: blue; }
+.LW2_description{}
+.LW2_answers{}
+.LW2_submit{}
+
+.LW2_agreement{border-style: solid}
+
+.LW2_license{font-weight: bold;}
+.LW2_licenseDescription{}
+.border {
+	background-color: #E4F0F1;
+	text-align: left;
+}
+.left {
+	text-align: left;
+}
+.main {
+	text-align: left;
+	font-color:#E4F0F1;
+}
+.info {
+	background-color: #E8E8E8;
+}
+.borderstyle {
+	width: 550px; 
+	font-size: 12px; 
+	border-style: dashed; 
+	border-width: 1px; 
+	border-color: #999999; 
+}
+.lang {
+        position: absolute;
+        right:190px;
+        width:130px;
+        height:25px;
+        top:50px;
+        z-index:10000;
+        overflow: hidden;
+	font-size: 12px;
+	
+}

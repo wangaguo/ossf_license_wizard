@@ -1,0 +1,81 @@
+#use utf8;
+my @chk = (checked);
+our $LW2_HEADER, $LW2_BODY, $LW2_FOOTER;
+
+$LW2_HEADER = << "LW2_HEADER";
+Content-type: text/html; charset=utf-8
+
+<html>
+<head>
+<title>LicenseWizard v2.3</title>
+
+<link href="LicenseWizard.css" rel="stylesheet" type="text/css">
+@{[ -f "${questionId}.css" && "<link rel=stylesheet type='text/css' href='${questionId}.css'>" ]}
+</head>
+
+<body bgcolor="#F9FAF2" class="LW2_body">
+<!--$questionId-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4136519-7");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<div class="lang"><a href="http://www.openfoundry.org/index.php?lang=en" target="_black">OSSF</a>&nbsp;|&nbsp;<a href="http://swan.iis.sinica.edu.tw/LicenseWizard2/LicenseWizard.cgi">&#20013;&#25991;</a></div>
+<center>
+
+<!--<img src="images/LG2-en.gif"> -->
+LW2_HEADER
+$LW2_LICENSES = << "LW2_LICENSES";
+<h1>License Wizard v2.3</h1>
+<table cellpadding="0" cellspacing="0"  class="LW2_nowLicense">
+  <!--DWLayoutTable-->
+  <tr > 
+    <td width="12" height="10" valign="top"><img src="images/border_tl.gif" width="12" height="10"></td>
+    <td width="526"></td>
+    <td width="12" valign="top"><img src="images/border_tr.gif" width="12" height="10"></td>
+  </tr>
+  <tr> 
+    <td height="33">&nbsp;</td>
+    <td valign="top"><img src="images/4dot2.gif" width="9" height="6"><b>So far, this/these license(s) suit(s) your needs:</b>(@{[$#licenses+1]}) :@{[ join " / ", map { qq(<a href="$data->{Licenses}->[0]->{License}->{$_}->{url}" target="_black">$_</a>) } @licenses ]}</td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td height="9" valign="top"><img src="images/border_bl.gif" width="12" height="9"></td>
+    <td></td>
+    <td valign="top"><img src="images/border_br.gif" width="12" height="9"></td>
+  </tr>
+</table>
+
+LW2_LICENSES
+$LW2_BODY = << "LW2_BODY";
+$LW2_LICENSES
+<form action="$formURL" method="GET">
+<PRE wrap="hard" style="word-wrap: break-word; width: 550px; font-size: 12px; border-style: dashed; border-width: 1px; border-color: #999999; "class="main" >
+<center>
+<PRE wrap="hard" style="word-wrap: break-word; width: 530px; font-size: 12px; "class="main">
+<img src="images/Q.gif" width="22" height="22">@{$question->{Text}}<PRE wrap="hard" style="word-wrap: break-word; width: 450px; font-size: 12px; border-left:3px solid #ffffff" ><ul>@{[ txt($question->{Description}) ]}</ul></pre></pre>
+</center>
+</pre>
+	@{[ 
+	map {
+<< "ANS"
+<PRE wrap="hard" style="word-wrap: break-word; width: 550px; font-size: 12px; border-left:3px solid #ffffff" class="left"><img src="images/A.gif" width="22" height="22"><input type="radio" name="ans" value="@{[ ${oldAns} . '_' . $_->{value} ]}" @{[ shift @chk ]}><b>@{[ txt($_->{Text}) ]}</b><ul>@{[ txt($_->{Description}) ]}</ul></pre>	
+ANS
+	} @{ $question->{Answers}->[0]->{Answer} }
+	]} <input type="submit" class="LW2_submit">
+</form>
+LW2_BODY
+
+$LW2_FOOTER = << "LW2_FOOTER";
+</center>
+
+</body>
+</html>
+LW2_FOOTER
+
+$LW2_HEADER . $LW2_BODY . $LW2_FOOTER

@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<LicenseWizard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LicenseWizard.xsd">
+	<Questions initialQuestion="Q0">
+		<Question id="Q0">
+			<Text><![CDATA[ 
+When you, as the licensor (hereafter “you” for short), release your own software program under a free/open source software license, the following common conditions apply:
+(1)that you will provide the source code of the program;
+(2)that you grant users the rights to use, reproduce, distribute and modify the program;
+(3)that you grant those rights without license fee;
+(4)that there is no specific licensee;
+(5)that the rights are granted worldwide;
+(6)that the license is non-exclusive, therefore you can still have different licenses with different parties;
+(7)that the license does not come with any guarantee or warranty and this exempts you from unnecessary legal responsibilities.
+(8)that your program can be sold commercially.
+
+This License Wizard Version 2 helps you choose a free/open source software license that suits your needs. We have picked up a number of the most popular licenses on which we have conducted an in-depth research. Note this does not cover every kind of license and every kind of need. What this License Wizard suggests should be treated as a guideline. A number of resources you can refer to include: “Comparison of Different Free/Open Source Software Licenses”, “FAQ on Free/Open Source Software Licenses”, and “A Glossary of Free/Open Source Software-Related Legal Terms”. You can find other licenses approved by Open Source Initiative (OSI) at their official site.
+Before we start, please allow us to remind you that computer programs and related documentations are subject to the protection under Copyright Law. If your software program has made use of other people’s program code, or if your software program is a result of modifying other people’s program, please make sure that you also follow the set of rules of the license(s) under which the program(s) is (are) involved.
+
+				]]></Text>
+			<Description>
+                </Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q1">
+					<Text>YES</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="NotAgree">
+					<Text>NO</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q1">
+			<Text>Do you require that source code be given when the software program is redistributed?</Text>
+			<Description>After you have released your software program on OpenFoundry, if the licensees make the program available for download on sites other than OpenFoundry, or if they redistribute the program in forms such as CD-ROM or DVD-ROM, do you require they offer the source code to other users?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q6">
+					<Text>Yes</Text>
+					<Description>Although the licensees do not necessarily have to offer the source code when they redistribute it, but if someone asks them, they have to do so. This ensures that source code is always available for using, modification and further circulation.</Description>
+					<Licenses>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q6">
+					<Text>NO, I don’t require the source code be provided.</Text>
+					<Description>The licensees can turn down the request for source code. This may attract commercial entities to make use of your program and develop other projects upon it. This can also have positive contribution to the popularity of your program.</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q6">
+			<Text>Do you agree to let your software program be sublicensed by the licensees? (You can refer to the Glossary of Free/Open Source Software-Related Legal Terms for the meaning of sublicensing, under the term “sublicense.”)</Text>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q4-1">
+					<Text>YES , I agree.</Text>
+					<Description> One of the advantages of agreeing on sublicensing is that if other users have any problem, they don’t need to contact you or the orginator of the license. Rather they just contact the licensee who sublicenses the software program. This is especially helpful for programmers or companies that wish to serve their customers directly, as this saves people from complicated rights relationship.</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="Apache 2.0"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q4-1">
+					<Text>NO, the licensee cannot sublicense.</Text>
+					<Licenses>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q4-1">
+			<Text>Is there any patent involved in your software program?</Text>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q4">
+					<Text>YES, there may be patent-related issues in my software program.</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q7">
+					<Text>NO, there is no patent involved in my software program.</Text>
+					<Description> The following cases do not involve patent-related issues: That your program does not make use of any patent, or that the patent you make use has already been expired.</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q4">
+			<Text>Continued from the last question: Do you allow other people to use the patent involved in your software program?</Text>
+					<Description>If there is patent involved in your software program, then even if you have released the soure code, the software program still cannot be freely distributed and used. If you allow other people to use the patent involved, they may make use of or mofidy the program and help in the circulation of the program. </Description>			
+			<Answers>
+				<Answer value="Y" nextQuestion="Q7">
+					<Text>YES, I allow them to use it.</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="Apache 2.0"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q7">
+					<Text>NO, if other people would like to make use of the patent involved, they should ask for my permission.</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+<!--
+		<Question id="Q6-1">
+			<Text>您要求再散布程式時所收取的費用有所限制嗎？</Text>
+			<Description>再散佈程式（以及原始碼）有時候會需要一定的成本，所以為了不造成再散佈程式的使用者太大的負擔，通常會允許收取若干費用，但某些使用者也可能會透過販賣您的專案程式去牟利，您希望這些使用者在提供您的專案程式給其他人使用時所收取的費用要有一定的限制嗎？</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q7">
+					<Text>是，我同意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="QPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q9">
+					<Text>否，不需要對使用者收取的費用加以限制。</Text>
+					<Description>不需要限制對使用者再散布程式時所收取的金額，因為金額多寡可以透過市場機制來決定，這樣一方面可以提高使用者繼續散佈專案程式的意願，同時也可能讓更多人有機會能夠可以接觸到您的專案程式。</Description>
+					<Licenses/>
+				</Answer>
+			</Answers>
+		</Question>
+-->
+		<Question id="Q7">
+			<Text>If the distributed program does not include source code and the source code is provided through other means, do you allow the fee charged for the distributed source code to exceed the cost of distributing the source code?</Text>
+			<Description> In principle, there is no limitation of the fee charged for the distributed source code, but some licenses have special regulation: If the licensee only distributes the executable binary of the program and provides the source code through other means, do you agree that the licensee can charge other people a fee higher than the cost of distributing the source code, or even make a profit from selling the program?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q9">
+					<Text>YES, I agree. </Text>
+					<Description> The licensee can make a profit by selling the source code of my project at will. Market competition provides stimulus for other users to buy the program.</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q9">
+					<Text>NO, I don’t agree.</Text>
+					<Description>The licensee could not charge a fee higher than the cost of distributing the source code. He or she needs my prior consent if he or she wants to make a profit by selling the source code of my project.</Description>
+					<Licenses>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q9">
+			<Text>Do you allow the modified work of your program to be licensed under different terms?</Text>
+			<Description>If a licensee downloads your program and modifies it or makes partial use of the source code in another program, do you allow the modified program to adopt a license different from that adopted by your program? </Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q9-1">
+					<Text>YES, I allow that people who modify the program can adopt a different license.</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q10">
+					<Text>NO, I require people who modify the program adopt the same license.</Text>
+					<Description>This would avoid the situation where different adopted licenses become incompatible, causing difficulty in deployment for the licensees. This also ensures that the modified work is also free/ open source software.</Description>
+					<Licenses>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+						<License id="CPL 1.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q9-1">
+			<Text>Continued from the last question. Under which conditions do you allow the licensee to adopt a license of his or her own?</Text>
+			<Answers>
+				<Answer value="2" nextQuestion="Q10">
+					<Text>I would like that the licensee adopts a license that I designate.</Text>
+					<Description/>
+					<Licenses>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="3" nextQuestion="Q10">
+					<Text>The licensee can decide which terms he or she likes to use so long as they do not contradict the license that I have adopted.</Text>
+					<Description/>
+					<Licenses>
+						<License id="Apache 2.0"/>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q10">
+			<Text>Do you require that the source code of a modified program should be released?</Text>
+			<Description>After the licensee has downloaded your program and produces a new version by modifying the code or makes use of the code in the development of a new program, would you like that the source code of the modified work be open to the public?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q12">
+					<Text>YES.</Text>
+					<Description> I require the licensee who modifies the code should release the modified source code so that other users can make use of it or improve on it.</Description>
+					<Licenses>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q12">
+					<Text>NO</Text>
+					<Description>The licensee can decide whether he or she wants to release the modified code.</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q12">
+			<Text>Do you require the licensee who modifies your code supply complementary documentation?</Text>
+			<Description>After the licensee modifies your program, do you require the person in question provide documentation with his or her modified code, so that other people know when the code is modified and which part of the code is modified?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="End">
+					<Text>YES.</Text>
+					<Description>This makes it easier for other people to know the differences and make further improvements upon it.</Description>
+					<Licenses>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="End">
+					<Text>NO.</Text>
+					<Description>
+                        </Description>
+			<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="CPL 1.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+	</Questions>
+	<Licenses>
+                <License id="MIT" url="http://www.opensource.org/licenses/mit-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>The MIT License allows the copyright holder to modify the articles according to his or her own needs.</li>
+      <li>Compatible with other licenses.</li>
+      <li>Permits sublicensing.</li>
+      <li>Compatible with GPL.</li>
+      <li>For more information on the compatibility of the MIT License, please refer to “Comparison of Different Free/Open Source Software Licenses”.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="BSD" url="http://www.opensource.org/licenses/bsd-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>Compatible with other licenses</li>
+      <li>Compatible with GPL.</li>
+      <li>For more information on the compatibility of the BSD License, please refer to “Comparison of Different Free/Open Source Software Licenses”.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="zlib/libpng" url="http://www.opensource.org/licenses/zlib-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>Compatible with GPL.</li>
+      <li>For more information on the compatibility of the Zlib/lipng License, please refer to “Comparison of Different Free/Open Source Software Licenses”.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="Apache 1.1" url="http://www.opensource.org/licenses/apachepl.php">
+                        <Description>(n/a)</Description>
+                </License>
+                <License id="Apache 2.0" url="http://www.opensource.org/licenses/apache2.0.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>Comes with articles that cover the trademark rights of the copyright holder</li>
+      <li>Permits sublicensing.</li>
+      <li>•	Apache 2.0 is modified from Apache 1.1 by ASF (Apache Software Foundation) in order to make it easier for non-ASF programs to adopt its license.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="Artistic" url="http://www.opensource.org/licenses/artistic-license.php">
+                        <Description>(n/a)</Description>
+                </License>
+                <License id="CPL 1.0" url="http://www.opensource.org/licenses/cpl1.0.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>The first license that has extensive articles covering commercial uses, aiming to foster the use of open source and commercial applications.</li>
+      <li>The articles on patent rights granting are designed in order to protect contributors’ patent rights from being infringed because of the code contribution.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="QPL 1.0" url="http://www.opensource.org/licenses/qtpl.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>The licensee cannot modify the main part of the program. Any modification has to be in the form of patch.</li>
+      <li>Initial developer has a special place in this license. Even if the modified work is not distributed to the public, the initial developer still has a right to ask for the source code of the modified work.</li>
+      <li>Governed and construed in accordance with the Nowegian laws. Claims, legal proceeding or litigation arising in connection with the license will be brought to the Oslo City Court. (The original article of the license reads: “This license is governed by the Laws of Norway. Disputes shall be settled by Oslo City Court.”</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="MPL 1.1" url="http://www.opensource.org/licenses/mozilla1.1.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>Initial developer can adopt other licenses for certain parts of the program.</li>
+      <li>Includes clauses that specify the measures that initial developer (initial licensor) or contributor can take and the effect of such measures if the licensee litigates a patent dispute against the initial developer (initial licensor) or contributor.</li>
+      <li>Specifies that the licensee must establish a file named “LEGAL” to state the following information: (a) the claim and the party making the claim in sufficient detail that a recipient will know whom to contact; (b) reasons or related information if the licensee cannot observe the MPL in certain territories.</li>
+      <li>If, for some reason, the rights granted by MPL are terminated, the rights received through proper sublicensing are not affected.</li>
+      <li>Permits other people modifying the contents of MPL</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="LGPL 2.1" url="http://www.opensource.org/licenses/lgpl-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>Designed for libraries. Can be converted into GPL, but the conversion is irreversible and irrevocable.</li>
+      <li>Modified work can adopt LGPL only if it is also a library; otherwise it must adopt GPL instead.</li>
+      <li>Requires that the patent use in the program should not be in conflict with the obligations of the license.</li>
+      <li>Copyright holder can add regional clauses that restrict the circulation of the library in certain territories.</li>
+      <li>For more information on the compatibility of LGPL, please refer to “Comparison of Different Free/Open Source Software Licenses”.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="GPL 2.0" url="http://www.opensource.org/licenses/gpl-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>The modified program must also adopt GPL. It must not charge licensing fee and its source must stay open.</li>
+      <li>Although there is no clause covering patent licensing or patent litigation, it does specify the measures that the licensee may or can take when the use of a program is restricted because patent is involved.</li>
+      <li>If licensee distributes the source code separately, he or she may not charge a fee higher than the cost of distributing the source code.</li>
+      <li>Prohibits anyone from modifying the content of GPL</li>
+      <li>For more information on the compatibility of GPL, please refer to “Comparison of Different Free/Open Source Software Licenses”.</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+
+	</Licenses>
+</LicenseWizard>

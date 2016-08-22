@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<LicenseWizard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="LicenseWizard.xsd">
+	<Questions initialQuestion="Q0">
+		<Question id="Q0">
+			<Text><![CDATA[ 
+自由軟體的基本共通特性是授權人(您)在散布程式的時候：
+(1) 提供程式原始碼；
+(2) 將程式的使用、重製、散布和修改權都授權出去；
+(3) 前述的授權是不收取授權金的；
+(4) 前述的授權也沒有特定被授權人；
+(5) 您授權的散佈範圍是全球性的；
+(6) 採用非專屬授權方式，所以您還是可以跟其他人任意約定不同的授權方式；
+(7) 您的授權不附隨任何的擔保∕保證責任，為您免除不必要的法律責任。
+(8) 允許您將程式做商業化販售。
+
+我們提供了自由軟體授權指引ver.2提供您決定選取專案授權方式的參考。這裡只挑選了最被廣為使用的數種自由軟體授權條款進行分析，並無法涵蓋所有授權條款的類型與各種專案的不同需求，授權條款指引只是輔助您決定選取專案授權方式的參考之一。 您可以同時參考：「<a href="http://www.openfoundry.org/index.php?option=com_content&task=view&id=76&Itemid=211" target="_black">自由軟體授權條款比較表</a>」、「<a href="http://www.openfoundry.org/index.php?option=com_content&task=blogsection&id=11&Itemid=260" target="_black">自由軟體授權方式常見問答</a>」與「<a href="http://www.openfoundry.org/index.php?option=com_content&task=category&sectionid=10&id=31&Itemid=195" target="_black">自由軟體法律小辭典</a>」，幫助您進一步了解各種授權條款法律意義的不同，以便您選擇更符合需求的授權條款。或者您也可以前往<a href="http://www.opensource.org/" target="_blank">開放源碼組織</a>（Open Source Initiative, OSI ）網站參考其他OSI認可的自由軟體授權條款。
+
+在您使用自由軟體授權指引前，請容我們再次提醒您，電腦程式及其相關文件都是受到著作權法所保護的著作，您的專案程式若使用了其他人開發的程式碼，或您的專案是在其他專案程式的基礎上所作的修改，請您遵守您所引用的程式本身所採用的授權條款規定。
+				]]></Text>
+			<Description>
+                </Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q1">
+					<Text>我同意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="NotAgree">
+					<Text>不同意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q1">
+			<Text>您要求他人再散布程式時必須提供原始碼嗎？</Text>
+			<Description>當您在自由軟體鑄造場(下稱：鑄造場)釋出完成的專案程式之後，如果有使用者在鑄造場以外的網站藉由網路傳輸提供下載，或使用CD、DVD等方式提供您的專案程式給別人，您要求他也有責任提供該專案程式的原始碼給其他使用者嗎?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q6">
+					<Text>是。</Text>
+					<Description>使用者不一定要在提供程式的同時提供原始碼，但是當其他使用者索取原始碼時，他就必須提供，這樣可以確保其他使用者能夠取得程式的原始碼，方便使用、修改並且廣為流傳。</Description>
+					<Licenses>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q6">
+					<Text>否，我認為該使用者沒有義務提供原始碼。</Text>
+					<Description>該使用者可以拒絕其他使用者提供原始碼的要求，這樣或許會吸引某些商業公司使用您的專案程式，進一步開發作商業使用，如此一來對於您在開發專案程式上的貢獻也會有十分正面的宣傳效果。</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q6">
+			<Text>您允許他人對程式進行再授權嗎？(建議您可以參閱自由軟體法律小辭典，幫助您了解再授權的法律意義。)</Text>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q4-1">
+					<Text>是，我同意。</Text>
+					<Description>同意採取再授權的好處之一是：使用者如果有任何問題，不需要回頭與您(最開頭的權利人)聯絡，而可以直接與再授權的使用者溝通，這對於某些希望直接服務使用者的程式設計師以及商業公司有一定的好處，能夠省掉層層複雜的權利關係。</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="Apache 2.0"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q4-1">
+					<Text>否，使用者不能對其他人做再授權</Text>
+					<Licenses>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q4-1">
+			<Text>您所釋出的專案程式中是否有專利授權的問題？</Text>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q4">
+					<Text>是，我所釋出的專案程式可能會有專利授權的問題。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q7">
+					<Text>否，我釋出的專案程式裡面沒有專利授權的問題。</Text>
+					<Description>沒有專利授權的問題可能涉及下列情況：您釋出的專案程式中沒有使用到專利技術、或是您使用的專利技術已經超過保護年限等。</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q4">
+			<Text>您願意將程式所包含的專利授權他人利用嗎？</Text>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q7">
+					<Text>是，我願意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="Apache 2.0"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q7">
+					<Text>否，如果其他使用者想要利用這些專利技術的話，應該要徵詢我的同意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+<!--
+		<Question id="Q6-1">
+			<Text>您要求再散布程式時所收取的費用有所限制嗎？</Text>
+			<Description>再散佈程式（以及原始碼）有時候會需要一定的成本，所以為了不造成再散佈程式的使用者太大的負擔，通常會允許收取若干費用，但某些使用者也可能會透過販賣您的專案程式去牟利，您希望這些使用者在提供您的專案程式給其他人使用時所收取的費用要有一定的限制嗎？</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q7">
+					<Text>是，我同意。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="QPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q9">
+					<Text>否，不需要對使用者收取的費用加以限制。</Text>
+					<Description>不需要限制對使用者再散布程式時所收取的金額，因為金額多寡可以透過市場機制來決定，這樣一方面可以提高使用者繼續散佈專案程式的意願，同時也可能讓更多人有機會能夠可以接觸到您的專案程式。</Description>
+					<Licenses/>
+				</Answer>
+			</Answers>
+		</Question>
+-->
+		<Question id="Q7">
+			<Text>若是散布程式時，不包含原始碼在內，而是另外提供原始碼，此時您允許收取散佈原始碼的費用可以高於散布成本？</Text>
+			<Description>原則上自由軟體授權條款對於使用者所收取的費用沒有限制，不過有些授權條款針對特定的情況有限制規定：如果使用者只有單獨散布程式執行檔，另外分開再散布原始碼，您同意該使用者可以對其他使用者收取高於散布原始碼成本的費用，甚至是以販賣的形式獲取利潤嗎？</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q9">
+					<Text>是，我同意。</Text>
+					<Description>我同意使用者可以任意販賣我的專案程式原始碼，市場競爭會促使他對其他使用者提供更有吸引力的購買誘因。</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q9">
+					<Text>否，我不同意。</Text>
+					<Description>我認為使用者不應該收取比散布原始碼成本還要高的金額，如果他想要藉由販賣我的專案程式原始碼賺錢，應該要另外取得我的同意。</Description>
+					<Licenses>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q9">
+			<Text>您允許程式被修改後使用不同的授權條款嗎？</Text>
+			<Description>當使用者下載您的專案程式並且將其加以修改，或使用了部份程式碼在其他程式裡頭，你希望這個修改後的程式必須使用和您的專案程式相同的自由軟體授權條款嗎？</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q9-1">
+					<Text>是，我允許修改程式的使用者可以採用其他授權內容。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q10">
+					<Text>否，我要求修改程式的使用者採用和原程式相同的授權條款。</Text>
+					<Description>這樣可以避免程式修改或整合之後，因為授權條款彼此不相容，可能造成使用者在使用上的困難，同時也比較能確保後續的修改程式還會是自由軟體 。</Description>
+					<Licenses>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+						<License id="CPL 1.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q9-1">
+			<Text>承上題，您願意在什麼狀況下允許使用者選擇符合自己需求的授權條款呢？</Text>
+			<Answers>
+				<Answer value="2" nextQuestion="Q10">
+					<Text> 我希望使用者選擇我所指定的授權條款。</Text>
+					<Description/>
+					<Licenses>
+						<License id="MPL 1.1"/>
+					</Licenses>
+				</Answer>
+				<Answer value="3" nextQuestion="Q10">
+					<Text> 只要不和我釋出的專案程式的授權條款相違背，使用者都可以自由決定他所希望採取的授權內容。</Text>
+					<Description/>
+					<Licenses>
+						<License id="Apache 2.0"/>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Artistic"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q10">
+			<Text>您要求程式被修改後必須公開原始碼嗎？</Text>
+			<Description>當使用者下載您的專案程式而且把這個程式修改成新的版本、或使用程式碼去開發不同的程式時，您希望修改之後的程式也必須將原始碼公開嗎?</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="Q12">
+					<Text>是。</Text>
+					<Description>我要求使用者修改程式之後，也必須公開修改的程式原始碼，方便更多使用者能夠進一步地利用與改進。</Description>
+					<Licenses>
+						<License id="Artistic"/>
+						<License id="CPL 1.0"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="Q12">
+					<Text>否。</Text>
+					<Description>使用者可以自行決定要不要公開修改之後的程式原始碼 。</Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+		<Question id="Q12">
+			<Text>您要求後續修改者修改程式時必須附加修改說明文件嗎？</Text>
+			<Description>當使用者修改了您釋出的專案程式之後，您是否要求該使用者必須在他所修改的程式中，提供說明文件，讓大家知道他修改這個程式的時間、修改了哪些地方等相關訊息？</Description>
+			<Answers>
+				<Answer value="Y" nextQuestion="End">
+					<Text>是。</Text>
+					<Description>這樣可以方便其他使用者對照，以及進一步修改程式。</Description>
+					<Licenses>
+						<License id="zlib/libpng"/>
+						<License id="Apache 1.1"/>
+						<License id="Apache 2.0"/>
+						<License id="Artistic"/>
+						<License id="MPL 1.1"/>
+						<License id="LGPL 2.1"/>
+						<License id="GPL 2.0"/>
+					</Licenses>
+				</Answer>
+				<Answer value="N" nextQuestion="End">
+					<Text>否。</Text>
+					<Description>
+                        </Description>
+					<Licenses>
+						<License id="MIT"/>
+						<License id="BSD"/>
+						<License id="CPL 1.0"/>
+					</Licenses>
+				</Answer>
+			</Answers>
+		</Question>
+	</Questions>
+	<Licenses>
+                <License id="MIT" url="http://www.opensource.org/licenses/mit-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>MIT允許程式著作權人依照其需要修改授權條款內容。</li>
+      <li>可與其他授權條款並存。</li>
+      <li>允許被授權人再授權。</li>
+      <li>與GPL相容。</li>
+      <li>有關MIT與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="BSD" url="http://www.opensource.org/licenses/bsd-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>可與其他授權條款並存。</li>
+      <li>與GPL相容。</li>
+      <li>有關BSD與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="zlib/libpng" url="http://www.opensource.org/licenses/zlib-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>與GPL相容。</li>
+      <li>有關Zilb/lipng與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="Apache 1.1" url="http://www.opensource.org/licenses/apachepl.php">
+                        <Description>（無）</Description>
+                </License>
+                <License id="Apache 2.0" url="http://www.opensource.org/licenses/apache2.0.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>有保護程式著作權人商標權的規定。</li>
+      <li>允許被授權人再授權。</li>
+      <li>Apache 2.0的條款內容是ASF（Apache Software Foundation）為了讓非ASF開發的程式更方便採用此一授權條款作為授權內容，因此修改Apache 1.1而來的。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="Artistic" url="http://www.opensource.org/licenses/artistic-license.php">
+                        <Description>（無）</Description>
+                </License>
+                <License id="CPL 1.0" url="http://www.opensource.org/licenses/cpl1.0.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>第一個大篇幅的完整的對商業使用作規範的授權條款，目的在於鼓勵開放原始碼，且能受到眾多商業公司的採用。</li>
+      <li>在此授權條款中關於專利權的授與的條款設計是為了避免貢獻者因貢獻出code，而造成自己的專利權受侵害的結果發生。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="QPL 1.0" url="http://www.opensource.org/licenses/qtpl.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>後續修改者不能更動主程式，修改只能用修補程式檔（Patch）的方式完成。</li>
+      <li>最初開發者（Initial Developer）地位特殊，即使後續衍生著作並不向公眾進行散布，最初開發者仍可向衍生著作的著作權人要求提供此衍生著作的原始碼。</li>
+      <li>準據法適用挪威法律，管轄法院為奧斯陸地方法院。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="MPL 1.1" url="http://www.opensource.org/licenses/mozilla1.1.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>程式的最初開發者可以選擇特定部分適用其他的授權條款。</li>
+      <li>針對被授權人對授權人或是程式貢獻者提起專利控訴時，規定授權人或是貢獻者可以採取的措施以及這些措施的效果。</li>
+      <li>MPL規定在特定情況下，被授權人必須在程式中建立一個「法律（legal）」文字檔來說明這些特定情況：（a）若貢獻專利到程式中，必須將所貢獻專利的相關資訊說明清楚；（b）若被授權人無法在特定地域中遵守MPL時，說明無法遵守的理由與相關資訊。</li>
+      <li>若因為某些原因，使得MPL所授與的權利終止時，收受者透過合法再授權所取得的權利並不受到影響。</li>
+      <li>允許他人修改MPL內容。</li>
+      <li>有關MPL與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="LGPL 2.1" url="http://www.opensource.org/licenses/lgpl-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>針對函式庫（Libraries）設計的授權條款，嗣後可轉化為適用GPL規範，但此轉化過程不可逆轉，亦不可嗣後撤銷。</li>
+      <li>衍生著作須仍是函式庫方可繼續適用LGPL，否則僅能轉為適用GPL。</li>
+      <li>授權條款要求程式中專利權的行使不得和授權條款中義務性要求衝突。</li>
+      <li>著作權人可增訂地域性限制條款，禁止函式庫在部分國家流傳。</li>
+      <li>有關LGPL與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」。</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+                <License id="GPL 2.0" url="http://www.opensource.org/licenses/gpl-license.php">
+                        <Description>
+<![CDATA[
+<ul>
+      <li>程式修改後仍必須使用GPL做為授權條款，所以也必須維持不收取授權金以及開放原始碼的特性。</li>
+      <li>雖然沒有專利授權或是與專利訴訟相關的規定，不過GPL有規定若是因為專利因素，使得程式的使用在特定地域中受到限制時，被授權人應該或是可以採取的措施。</li>
+      <li>若使用者以另外提供原始碼的形式來散布程式，在另外提供原始碼時不可以收取高於重製與運送等成本的費用。</li>
+      <li>禁止他人修改GPL內容。</li>
+      <li>有關GPL與其他授權條款的相容性，請參照「自由/開放原始碼軟體授權條款相容性」</li>
+</ul>
+]]>
+                        </Description>
+                </License>
+
+	</Licenses>
+</LicenseWizard>
